@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Protein Dashboard</title>
+  <script src="https://www.ebi.ac.uk/pdbe/molstar/molstar.js"></script>
+  <link rel="stylesheet" href="https://www.ebi.ac.uk/pdbe/molstar/molstar.css" />
+  <style>
+    #viewer {
+      width: 100%;
+      height: 600px;
+    }
+    #controls {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Visualizzazione PDB in Cartoon</h2>
+
+  <div id="controls">
+    <label for="pdb-select">Seleziona PDB:</label>
+    <select id="pdb-select">
+      <option value="pdbs/example1.pdb">example1.pdb</option>
+      <option value="pdbs/example2.pdb">example2.pdb</option>
+    </select>
+  </div>
+
+  <div id="viewer"></div>
+
+  <script src="js/viewer.js"></script>
+</body>
+</html>
